@@ -1,0 +1,1 @@
+include ':app', ':MAFSettingScreen-3.15.0', ':MAFUIComponents-3.15.0', ':MAFLogonUI-3.15.0', ':MobilePlace-3.15.0'

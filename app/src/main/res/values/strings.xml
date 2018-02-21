@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">App1</string>
+    <string name="title_activity_custom_list">CustomList</string>
+    <string-array name="headings">
+        <item>Heading 1</item>
+        <item>Heading 2</item>
+        <item>Heading 3</item>
+        <item>Heading 4</item>
+        <item>Heading 5</item>
+        <item>Heading 6</item>
+        <item>Heading 7</item>
+        <item>Heading 8</item>
+        <item>Heading 9</item>
+        <item>Heading 10</item>
+    </string-array>
+    <string-array name="bodies">
+        <item>KuchBhi 1</item>
+        <item>KuchBhi 2</item>
+        <item>KuchBhi 3</item>
+        <item>KuchBhi 4</item>
+        <item>KuchBhi 5</item>
+        <item>KuchBhi 6</item>
+        <item>KuchBhi 7</item>
+        <item>KuchBhi 8</item>
+        <item>KuchBhi 9</item>
+        <item>KuchBhi 10</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

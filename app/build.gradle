@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.ritwikjain.app1"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    compile(name: 'ClientLog-3.15.0', ext: 'aar')
+    compile(name: 'Connectivity-3.15.0', ext: 'aar')
+    compile(name: 'ClientHubSLL-3.15.0', ext: 'aar')
+    compile(name: 'CoreServices-3.15.0', ext: 'aar')
+    compile(name: 'DataVaultLib-3.15.0', ext: 'aar')
+    compile(name: 'E2ETrace-3.15.0', ext: 'aar')
+    compile(name: 'HttpConvAuthFlows-3.15.0', ext: 'aar')
+    compile(name: 'HttpConversation-3.15.0', ext: 'aar')
+    compile(name: 'MAFLogger-3.15.0', ext: 'aar')
+    compile(name: 'MAFLogonCore-3.15.0', ext: 'aar')
+    compile(name: 'ODataAPI-3.15.0', ext: 'aar')
+    compile(name: 'ODataOnline-3.15.0', ext: 'aar')
+    compile(name: 'Common-3.15.0', ext: 'aar')
+    compile(name: 'SupportabilityFacade-3.15.0', ext: 'aar')
+    implementation project(':MAFLogonUI-3.15.0')
+    implementation project(':MAFSettingScreen-3.15.0')
+    implementation project(':MAFUIComponents-3.15.0')
+    implementation project(':MobilePlace-3.15.0')
+    implementation files('libs/AfariaSLL-7.00.6169.0.jar')
+    implementation files('libs/perflib-1.2.0.jar')
+    implementation files('libs/odataoffline.jar')
+    implementation files('libs/sap-e2etrace-2.3.9.0.jar')
+}
